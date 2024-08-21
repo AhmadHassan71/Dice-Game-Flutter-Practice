@@ -1,27 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sms_assistant/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.red, Colors.blue],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter),
-          ),
-          child: const Center(
-            child: Text(
-              "Hello World!",
-              style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w800),
-            ),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
