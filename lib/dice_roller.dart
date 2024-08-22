@@ -13,10 +13,12 @@ class DiceRoller extends StatefulWidget {
 
 class _DiceRollerState extends State<DiceRoller> {
   var activeDiceImage = "assets/images/dice-1.png";
+  var diceNumber = Random().nextInt(6) + 1;
 
   void rollDice() {
     setState(() {
-      activeDiceImage = "assets/images/dice-${Random().nextInt(6) + 1}.png";
+      diceNumber = Random().nextInt(6) + 1;
+      activeDiceImage = "assets/images/dice-$diceNumber.png";
     });
 
     print('Button pressed');

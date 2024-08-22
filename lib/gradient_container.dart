@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sms_assistant/dice_roller.dart';
 
 class GradientContainer extends StatelessWidget {
-  GradientContainer(this.gradient, this.text, {super.key});
+  const GradientContainer(this.gradient, this.text, {super.key});
 
   final String text;
   final LinearGradient gradient;
