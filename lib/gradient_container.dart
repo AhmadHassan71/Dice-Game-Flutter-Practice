@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:sms_assistant/text_container.dart';
-import 'package:sms_assistant/styles.dart';
-
-const text = "bandar khan ";
+import 'package:sms_assistant/dice_roller.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  GradientContainer(this.gradient, this.text, {super.key});
+
+  final String text;
+  final LinearGradient gradient;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        gradient: homeGradient,
+      decoration: BoxDecoration(
+        gradient: gradient,
       ),
-      child: const TextContainer(text),
+      child: const Center(
+        child: DiceRoller(),
+      ),
+      // Image.asset('assets/images/dice-1.png', fit: BoxFit.cover),
     );
   }
 }

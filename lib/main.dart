@@ -4,10 +4,10 @@ import 'package:sms_assistant/styles.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         backgroundColor: primaryColor,
-        body: GradientContainer(),
+        body: GradientContainer(homeGradient, homeGreetingText),
       ),
     ),
   );

@@ -19,7 +19,10 @@ const primaryTextStyle = TextStyle(
 // Gradient Styles
 const homeGradientBegin = Alignment.topCenter;
 const homeGradientEnd = Alignment.bottomCenter;
-const homeGradientColors = [Colors.red, Colors.blue];
+const homeGradientColors = [
+  Color.fromARGB(255, 179, 46, 36),
+  Color.fromARGB(255, 80, 100, 116)
+];
 
 // Gradients
 const homeGradient = LinearGradient(
