@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:sms_assistant/styles.dart';
 
 class TextContainer extends StatelessWidget {
-  const TextContainer({super.key});
-
+  const TextContainer(this.text, {super.key});
+  final String text;
   @override
-  Widget build(BuildContext context) {
-    return const Center(
+  Widget build(context) {
+    return Center(
       child: Text(
-        "Hello World!",
-        style: TextStyle(
-          fontSize: 30,
-          color: Colors.white,
-          fontWeight: FontWeight.w800,
-        ),
+        text,
+        style: primaryTextStyle,
       ),
     );
   }
